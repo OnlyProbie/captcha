@@ -1,0 +1,129 @@
+[2024-11-17 16:51:47] INFO: 验证码服务启动在 http://localhost:3000 
+[2024-11-17 16:51:54] INFO: [qn76t] 收到请求: GET /issues 
+[2024-11-17 16:51:54] INFO: [qn76t] 请求完成: GET /issues 404 - 1ms 
+[2024-11-17 16:51:54] INFO: [i9bw0i] 收到请求: GET /favicon.ico 
+[2024-11-17 16:51:54] INFO: [i9bw0i] 请求完成: GET /favicon.ico 404 - 1ms 
+[2024-11-17 16:53:08] INFO: [23vhd9] 收到请求: GET /generate 
+[2024-11-17 16:53:08] INFO: [23vhd9] 请求完成: GET /generate 404 - 1ms 
+[2024-11-17 16:53:54] INFO: [9c5vw] 收到请求: GET /generate 
+[2024-11-17 16:53:54] INFO: [9c5vw] 请求完成: GET /generate 404 - 1ms 
+[2024-11-17 16:54:07] INFO: 验证码服务启动在 http://localhost:3000 
+[2024-11-17 16:54:10] INFO: [udc6sa] 收到请求: GET /generate 
+[2024-11-17 16:54:10] INFO: [udc6sa] 请求完成: GET /generate 404 - 3ms 
+[2024-11-17 16:54:21] INFO: 验证码服务启动在 http://localhost:3000 
+[2024-11-17 16:54:38] INFO: [stomen] 收到请求: GET /api/captcha/generate 
+[2024-11-17 16:54:38] INFO: [stomen] 请求完成: GET /api/captcha/generate 405 - 2ms 
+[2024-11-17 16:54:46] INFO: 验证码服务启动在 http://localhost:3000 
+[2024-11-17 16:54:48] INFO: [rlx1jk] 收到请求: GET /api/captcha/generate 
+[2024-11-17 16:54:48] INFO: [rlx1jk] 请求完成: GET /api/captcha/generate 400 - 3ms 
+[2024-11-17 16:55:00] INFO: [kj5rf5] 收到请求: GET /api/captcha/generate?userId=12sadf 
+[2024-11-17 16:55:00] INFO: [kj5rf5] 请求完成: GET /api/captcha/generate?userId=12sadf 400 - 2ms 
+[2024-11-17 16:55:05] INFO: [tz41yb] 收到请求: GET /api/captcha/generate?userId=12sadf 
+[2024-11-17 16:55:05] INFO: [tz41yb] 请求完成: GET /api/captcha/generate?userId=12sadf 400 - 2ms 
+[2024-11-17 16:56:49] INFO: 验证码服务启动在 http://localhost:3000 
+[2024-11-17 16:56:52] INFO: [zxi0y7] 收到请求: GET /api/captcha/generate?userId=12sadf 
+[2024-11-17 16:56:52] INFO: [zxi0y7] 请求完成: GET /api/captcha/generate?userId=12sadf 400 - 2ms 
+[2024-11-17 16:56:54] INFO: [7rym8] 收到请求: GET /api/captcha/generate?userId=12sadf 
+[2024-11-17 16:56:54] INFO: [7rym8] 请求完成: GET /api/captcha/generate?userId=12sadf 400 - 1ms 
+[2024-11-17 16:57:12] INFO: 验证码服务启动在 http://localhost:3000 
+[2024-11-17 16:57:16] INFO: [x0i1e] 收到请求: GET /api/captcha/generate?userId=12sadf 
+[2024-11-17 16:57:16] INFO: [x0i1e] 请求完成: GET /api/captcha/generate?userId=12sadf 400 - 3ms 
+[2024-11-17 16:58:15] INFO: 验证码服务启动在 http://localhost:3000 
+[2024-11-17 16:58:16] INFO: [dcs3bi] 收到请求: GET /api/captcha/generate?userId=12sadf 
+[2024-11-17 16:58:16] INFO: [dcs3bi] 请求完成: GET /api/captcha/generate?userId=12sadf 400 - 3ms 
+[2024-11-17 16:58:40] INFO: 验证码服务启动在 http://localhost:3000 
+[2024-11-17 16:58:42] INFO: [2g8v6] 收到请求: GET /api/captcha/generate?userId=12sadf 
+[2024-11-17 16:58:42] ERROR: [2g8v6] 请求错误: GET /api/captcha/generate?userId=12sadf 500 - 4ms 
+ReferenceError: userId is not defined
+    at CaptchaService.generateCode (/Users/tempest/tempest/code/captcha/src/services/captchaService.js:15:37)
+    at CaptchaService.createCaptcha (/Users/tempest/tempest/code/captcha/src/services/captchaService.js:20:23)
+    at generate (/Users/tempest/tempest/code/captcha/src/controllers/captchaController.js:15:33)
+    at dispatch (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+    at /Users/tempest/tempest/code/captcha/node_modules/.pnpm/koa-router@12.0.1/node_modules/koa-router/lib/router.js:423:16
+    at dispatch (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+    at /Users/tempest/tempest/code/captcha/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/koa-router@12.0.1/node_modules/koa-router/lib/router.js:428:31)
+    at dispatch (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/tempest/tempest/code/captcha/src/middleware/loggerMiddleware.js:12:15)
+[2024-11-17 16:58:42] ERROR: 服务器错误 
+ReferenceError: userId is not defined
+    at CaptchaService.generateCode (/Users/tempest/tempest/code/captcha/src/services/captchaService.js:15:37)
+    at CaptchaService.createCaptcha (/Users/tempest/tempest/code/captcha/src/services/captchaService.js:20:23)
+    at generate (/Users/tempest/tempest/code/captcha/src/controllers/captchaController.js:15:33)
+    at dispatch (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+    at /Users/tempest/tempest/code/captcha/node_modules/.pnpm/koa-router@12.0.1/node_modules/koa-router/lib/router.js:423:16
+    at dispatch (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+    at /Users/tempest/tempest/code/captcha/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/koa-router@12.0.1/node_modules/koa-router/lib/router.js:428:31)
+    at dispatch (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+    at module.exports (/Users/tempest/tempest/code/captcha/src/middleware/loggerMiddleware.js:12:15)
+[2024-11-17 16:59:10] INFO: 验证码服务启动在 http://localhost:3000 
+[2024-11-17 16:59:14] INFO: [j8e9u4] 收到请求: GET /api/captcha/generate?userId=12sadf 
+[2024-11-17 16:59:14] INFO: 生成验证码: code = 152477 
+[2024-11-17 16:59:14] INFO: [j8e9u4] 请求完成: GET /api/captcha/generate?userId=12sadf 200 - 4ms 
+[2024-11-17 16:59:17] INFO: [aolkpd] 收到请求: GET /api/captcha/generate?userId=12sadf 
+[2024-11-17 16:59:17] INFO: 生成验证码: code = 249433 
+[2024-11-17 16:59:17] INFO: [aolkpd] 请求完成: GET /api/captcha/generate?userId=12sadf 200 - 4ms 
+[2024-11-17 16:59:18] INFO: [azboq7] 收到请求: GET /api/captcha/generate?userId=12sadf 
+[2024-11-17 16:59:18] INFO: 生成验证码: code = 699767 
+[2024-11-17 16:59:18] INFO: [azboq7] 请求完成: GET /api/captcha/generate?userId=12sadf 200 - 3ms 
+[2024-11-17 16:59:19] INFO: [hej88c] 收到请求: GET /api/captcha/generate?userId=12sadf 
+[2024-11-17 16:59:19] INFO: 生成验证码: code = 729928 
+[2024-11-17 16:59:19] INFO: [hej88c] 请求完成: GET /api/captcha/generate?userId=12sadf 200 - 2ms 
+[2024-11-17 16:59:20] INFO: [1yb3t8] 收到请求: GET /api/captcha/generate?userId=12sadf 
+[2024-11-17 16:59:20] INFO: 生成验证码: code = 436690 
+[2024-11-17 16:59:20] INFO: [1yb3t8] 请求完成: GET /api/captcha/generate?userId=12sadf 200 - 2ms 
+[2024-11-17 16:59:20] INFO: [01aa5e] 收到请求: GET /api/captcha/generate?userId=12sadf 
+[2024-11-17 16:59:20] INFO: 生成验证码: code = 017157 
+[2024-11-17 16:59:20] INFO: [01aa5e] 请求完成: GET /api/captcha/generate?userId=12sadf 200 - 5ms 
+[2024-11-17 16:59:21] INFO: [x1t8b37] 收到请求: GET /api/captcha/generate?userId=12sadf 
+[2024-11-17 16:59:21] INFO: 生成验证码: code = 162873 
+[2024-11-17 16:59:21] INFO: [x1t8b37] 请求完成: GET /api/captcha/generate?userId=12sadf 200 - 2ms 
+[2024-11-17 16:59:21] INFO: [12ub98] 收到请求: GET /api/captcha/generate?userId=12sadf 
+[2024-11-17 16:59:21] INFO: 生成验证码: code = 570836 
+[2024-11-17 16:59:21] INFO: [12ub98] 请求完成: GET /api/captcha/generate?userId=12sadf 200 - 1ms 
+[2024-11-17 16:59:22] INFO: [w19ggh] 收到请求: GET /api/captcha/generate?userId=12sadf 
+[2024-11-17 16:59:22] INFO: 生成验证码: code = 835402 
+[2024-11-17 16:59:22] INFO: [w19ggh] 请求完成: GET /api/captcha/generate?userId=12sadf 200 - 3ms 
+[2024-11-17 16:59:22] INFO: [6x1pc] 收到请求: GET /api/captcha/generate?userId=12sadf 
+[2024-11-17 16:59:22] INFO: 生成验证码: code = 007626 
+[2024-11-17 16:59:22] INFO: [6x1pc] 请求完成: GET /api/captcha/generate?userId=12sadf 200 - 3ms 
+[2024-11-17 16:59:23] INFO: [3taqrh] 收到请求: GET /api/captcha/generate?userId=12sadf 
+[2024-11-17 16:59:23] INFO: 生成验证码: code = 041619 
+[2024-11-17 16:59:23] INFO: [3taqrh] 请求完成: GET /api/captcha/generate?userId=12sadf 200 - 2ms 
+[2024-11-17 16:59:23] INFO: [f9xfgf] 收到请求: GET /api/captcha/generate?userId=12sadf 
+[2024-11-17 16:59:23] INFO: 生成验证码: code = 331136 
+[2024-11-17 16:59:23] INFO: [f9xfgf] 请求完成: GET /api/captcha/generate?userId=12sadf 200 - 2ms 
+[2024-11-17 16:59:23] INFO: [qhcadc] 收到请求: GET /api/captcha/generate?userId=12sadf 
+[2024-11-17 16:59:23] INFO: 生成验证码: code = 975450 
+[2024-11-17 16:59:23] INFO: [qhcadc] 请求完成: GET /api/captcha/generate?userId=12sadf 200 - 1ms 
+[2024-11-17 17:28:17] INFO: 验证码服务启动在 http://localhost:3000 
+[2024-11-17 17:28:17] ERROR: 数据库连接失败: Access denied for user 'root'@'172.18.0.1' (using password: YES) 
+SequelizeAccessDeniedError: Access denied for user 'root'@'172.18.0.1' (using password: YES)
+    at ConnectionManager.connect (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:94:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async ConnectionManager._connect (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+    at async /Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:174:32
+    at async ConnectionManager.getConnection (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:197:7)
+    at async /Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/sequelize.js:305:26
+    at async Sequelize.authenticate (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/sequelize.js:457:5)
+[2024-11-17 17:28:21] INFO: 验证码服务启动在 http://localhost:3000 
+[2024-11-17 17:28:21] ERROR: 数据库连接失败: Access denied for user 'root'@'172.18.0.1' (using password: YES) 
+SequelizeAccessDeniedError: Access denied for user 'root'@'172.18.0.1' (using password: YES)
+    at ConnectionManager.connect (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:94:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async ConnectionManager._connect (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+    at async /Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:174:32
+    at async ConnectionManager.getConnection (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:197:7)
+    at async /Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/sequelize.js:305:26
+    at async Sequelize.authenticate (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/sequelize.js:457:5)
+[2024-11-17 17:28:29] INFO: 验证码服务启动在 http://localhost:3000 
+[2024-11-17 17:28:29] ERROR: 数据库连接失败: Access denied for user 'root'@'172.18.0.1' (using password: YES) 
+SequelizeAccessDeniedError: Access denied for user 'root'@'172.18.0.1' (using password: YES)
+    at ConnectionManager.connect (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:94:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async ConnectionManager._connect (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+    at async /Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:174:32
+    at async ConnectionManager.getConnection (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:197:7)
+    at async /Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/sequelize.js:305:26
+    at async Sequelize.authenticate (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/sequelize.js:457:5)

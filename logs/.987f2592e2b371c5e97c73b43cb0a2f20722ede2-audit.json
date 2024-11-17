@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/tempest/tempest/code/captcha/logs/.987f2592e2b371c5e97c73b43cb0a2f20722ede2-audit.json",
+    "files": [
+        {
+            "date": 1731833507964,
+            "name": "/Users/tempest/tempest/code/captcha/logs/error-2024-11-17.log",
+            "hash": "b931de9a0397d2a379979d10a6aa75498b2307bfa68bd99686b94411f3b3a0fc"
+        }
+    ],
+    "hashType": "sha256"
+}
