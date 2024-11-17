@@ -1,21 +1,23 @@
 const logger = require('./loggerService');
 const Captcha = require('../models/captcha');
 const { Op } = require('sequelize');
+const svgCaptcha = require('svg-captcha')
+
 
 class CaptchaService {
   constructor() {
     this.validDuration = 5 * 60 * 1000; // 5分钟
   }
-
-  generateCode(length = 6) {
-    const chars = '0123456789';
-    let code = '';
-    for (let i = 0; i < length; i++) {
-      code += chars[Math.floor(Math.random() * chars.length)];
-    }
-    return code;
+  // 生成svg验证码
+  generateCaptcha() {
+    return svgCaptcha.create({
+      size : 4,
+      ignoreChars : "iIl10Oo",
+      noise : 6,
+      color : true
+    })
   }
-
+  // 创建验证码
   async createCaptcha(userId) {
     try {
       // 使任何现有的未使用验证码失效
@@ -30,26 +32,25 @@ class CaptchaService {
         }
       );
 
-      const code = this.generateCode();
+      const captchaData = this.generateCaptcha();
+      // 有效时间
       const expireAt = new Date(Date.now() + this.validDuration);
 
-      const captcha = await Captcha.create({
+      // 创建新的验证码数据
+      await Captcha.create({
         userId,
-        code,
+        code: captchaData.text,
         expireAt
       });
 
-      logger.info(`生成验证码: userId=${userId}, code=${code}, ${captcha}`);
-      return {
-        userId,
-        code
-      };
+      logger.info(`生成验证码: userId=${userId}, code=${captchaData.text}`);
+      return captchaData
     } catch (error) {
       logger.error('创建验证码失败:', error);
       throw error;
     }
   }
-
+  // 验证验证码
   async verifyCaptcha(userId, inputCode) {
     try {
       const captcha = await Captcha.findOne({
@@ -60,8 +61,6 @@ class CaptchaService {
           expireAt: { [Op.gt]: new Date() }
         }
       });
-
-      console.log('---- -captcha ', Captcha.findOne)
 
       if (!captcha) {
         logger.warn(`验证码验证失败: userId=${userId}, inputCode=${inputCode}`);

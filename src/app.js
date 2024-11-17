@@ -27,10 +27,10 @@ app.on('error', (err, ctx) => {
   });
 });
 
-// 定时清理过期验证码（每半小时执行一次）
+// 定时清理过期验证码（每小时执行一次）
 setInterval(() => {
   captchaService.cleanupExpiredCaptchas();
-}, 30 * 60 * 1000);
+}, 60 * 60 * 1000);
 
 app.listen(port, () => {
   logger.info(`验证码服务启动在 http://localhost:${port}`);
