@@ -4,7 +4,6 @@
 
 - 生成验证码
 - 验证验证码
-- restful api
 - 定时清理过期验证码
 - 系统日志
 - 数据库持久化
@@ -34,13 +33,13 @@
 
 ## 开发环境
 
+采用的是` docker `启动` mysql `数据库，需要前置安装` docker `。
+
 ### 安装依赖
 
 ```bash
 npm install
 ```
-
-采用的是docker-compose启动mysql数据库，需要前置安装docker。
 
 ### 启动开发环境（包含mysql数据库）
 
