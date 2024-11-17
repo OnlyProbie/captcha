@@ -8,29 +8,6 @@
 - 系统日志
 - 数据库持久化
 
-
-## api
-
-### 生成验证码
-
-请求路径：`/api/captcha/generate` 
-
-请求方法: ` POST `
-
-请求入参： 
- - ` userId `: 用户唯一ID
-
-### 验证验证码
-
-请求路径：`/api/captcha/verify`
-
-请求方法: ` POST `
-
-请求入参：
-
-- ` userId `: 用户唯一ID
-- ` code `: 验证码
-
 ## 开发环境
 
 采用的是` docker `启动` mysql `数据库，需要前置安装` docker `。
@@ -60,15 +37,38 @@ pnpm db:init
 pnpm db:logs
 ```
 
-4. 停止mysql数据库
-
-```bash
-pnpm db:down
-```
-
-5. 启动服务
+4. 启动服务
 
 ```bash
 pnpm dev
 ```
 
+5. 停止mysql数据库
+
+```bash
+pnpm db:down
+```
+
+
+
+## api
+
+### 生成验证码
+
+请求路径：`/api/captcha/generate` 
+
+请求方法: ` POST `
+
+请求入参： 
+ - ` userId `: 用户唯一ID
+
+### 验证验证码
+
+请求路径：`/api/captcha/verify`
+
+请求方法: ` POST `
+
+请求入参：
+
+- ` userId `: 用户唯一ID
+- ` code `: 验证码
