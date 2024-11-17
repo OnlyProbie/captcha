@@ -8,8 +8,8 @@
     "db:up": "docker-compose up -d",
     "db:down": "docker-compose down",
     "db:logs": "docker-compose logs -f mysql",
-    "start:dev": "docker-compose up -d && nodemon src/app.js",
-    "init:db": "node src/scripts/init-db.js"
+    "db:init": "node src/scripts/initDb.js",
+    "start:dev": "docker-compose up -d && nodemon src/app.js"
   },
   "keywords": [],
   "author": "",

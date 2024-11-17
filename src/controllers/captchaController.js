@@ -12,23 +12,29 @@ class CaptchaController {
       return;
     }
 
-    const code = captchaService.createCaptcha(userId);
+    const code = await captchaService.createCaptcha(userId);
     ctx.body = {
       success: true,
-      data: { code }
+      data: { ...code }
     };
   }
 
   async verify(ctx) {
-    const { userId, code } = ctx.request.body;
+    // const { userId, code } = ctx.request.body;
 
-    if (!userId || !code) {
-      ctx.status = 400;
-      ctx.body = { error: '缺少必要参数' };
-      return;
-    }
+    const paramsArr = ctx.request.url.split('?')[1].split('&')
+    const params = {}
+    paramsArr.forEach(item => { 
+      params[item.split('=')[0]] = item.split('=')[1]
+    })
 
-    const isValid = captchaService.verifyCaptcha(userId, code);
+    // if (!userId || !code) {
+    //   ctx.status = 400;
+    //   ctx.body = { error: '缺少必要参数' };
+    //   return;
+    // }
+
+    const isValid = await captchaService.verifyCaptcha(params.userId, params.code);
     ctx.body = {
       success: true,
       data: { isValid }

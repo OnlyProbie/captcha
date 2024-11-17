@@ -41,13 +41,7 @@
 npm install
 ```
 
-### 启动开发环境（包含mysql数据库）
-
-```bash
-pnpm start:dev
-```
-
-## 单独启动mysql数据库
+### 启动开发环境
 
 1. 启动mysql数据库
 
@@ -57,7 +51,7 @@ pnpm db:up
 2. 初始化数据库
 
 ```bash
-pnpm init:db
+pnpm db:init
 ```
 
 3. 查看mysql数据库日志
@@ -70,5 +64,11 @@ pnpm db:logs
 
 ```bash
 pnpm db:down
+```
+
+5. 启动服务
+
+```bash
+pnpm dev
 ```
 

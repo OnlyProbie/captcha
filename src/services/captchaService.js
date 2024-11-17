@@ -39,8 +39,11 @@ class CaptchaService {
         expireAt
       });
 
-      logger.info(`生成验证码: userId=${userId}, code=${code}`);
-      return code;
+      logger.info(`生成验证码: userId=${userId}, code=${code}, ${captcha}`);
+      return {
+        userId,
+        code
+      };
     } catch (error) {
       logger.error('创建验证码失败:', error);
       throw error;
@@ -57,6 +60,8 @@ class CaptchaService {
           expireAt: { [Op.gt]: new Date() }
         }
       });
+
+      console.log('---- -captcha ', Captcha.findOne)
 
       if (!captcha) {
         logger.warn(`验证码验证失败: userId=${userId}, inputCode=${inputCode}`);
