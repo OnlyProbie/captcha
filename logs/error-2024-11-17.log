@@ -49,3 +49,48 @@ SequelizeAccessDeniedError: Access denied for user 'root'@'172.18.0.1' (using pa
     at async ConnectionManager.getConnection (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:197:7)
     at async /Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/sequelize.js:305:26
     at async Sequelize.authenticate (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/sequelize.js:457:5)
+[2024-11-17 17:51:02] ERROR: 数据库连接失败: Access denied for user 'root'@'172.18.0.1' (using password: YES) 
+SequelizeAccessDeniedError: Access denied for user 'root'@'172.18.0.1' (using password: YES)
+    at ConnectionManager.connect (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:94:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async ConnectionManager._connect (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+    at async /Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:174:32
+    at async ConnectionManager.getConnection (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:197:7)
+    at async /Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/sequelize.js:305:26
+    at async Sequelize.authenticate (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/sequelize.js:457:5)
+[2024-11-17 17:51:49] ERROR: 数据库连接失败: Access denied for user 'root'@'172.18.0.1' (using password: YES) 
+SequelizeAccessDeniedError: Access denied for user 'root'@'172.18.0.1' (using password: YES)
+    at ConnectionManager.connect (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:94:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async ConnectionManager._connect (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+    at async /Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:174:32
+    at async ConnectionManager.getConnection (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:197:7)
+    at async /Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/sequelize.js:305:26
+    at async Sequelize.authenticate (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/sequelize.js:457:5)
+[2024-11-17 17:53:49] ERROR: 数据库连接失败: Access denied for user 'root'@'172.18.0.1' (using password: YES) 
+SequelizeAccessDeniedError: Access denied for user 'root'@'172.18.0.1' (using password: YES)
+    at ConnectionManager.connect (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:94:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async ConnectionManager._connect (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+    at async /Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:174:32
+    at async ConnectionManager.getConnection (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:197:7)
+    at async /Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/sequelize.js:305:26
+    at async Sequelize.authenticate (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/sequelize.js:457:5)
+[2024-11-17 17:54:40] ERROR: 数据库连接失败: Access denied for user 'root'@'172.18.0.1' (using password: YES) 
+SequelizeAccessDeniedError: Access denied for user 'root'@'172.18.0.1' (using password: YES)
+    at ConnectionManager.connect (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:94:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async ConnectionManager._connect (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+    at async /Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:174:32
+    at async ConnectionManager.getConnection (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:197:7)
+    at async /Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/sequelize.js:305:26
+    at async Sequelize.authenticate (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/sequelize.js:457:5)
+[2024-11-17 17:56:13] ERROR: 数据库连接失败: 
+SequelizeConnectionRefusedError
+    at ConnectionManager.connect (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:92:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async ConnectionManager._connect (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+    at async /Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:174:32
+    at async ConnectionManager.getConnection (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:197:7)
+    at async /Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/sequelize.js:305:26
+    at async Sequelize.authenticate (/Users/tempest/tempest/code/captcha/node_modules/.pnpm/sequelize@6.37.5_mysql2@3.11.4/node_modules/sequelize/lib/sequelize.js:457:5)
